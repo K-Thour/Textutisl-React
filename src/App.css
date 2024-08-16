@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+#inlineRadio1{
+    background: black;
+}
+#inlineRadio2{
+  background: #020326;
+}
+#inlineRadio3{
+  background: gray;
+}
+#inlineRadio4{
+  background: rgb(1, 38, 1);
+}
