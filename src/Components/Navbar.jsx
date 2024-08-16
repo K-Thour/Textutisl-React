@@ -25,12 +25,12 @@ function Navbar({ navbar, home, link, dropDown, disabled, Search,Mode,Switch,Val
               <a className="nav-link active" aria-current="page" href="#">
                 {home}
               </a>
-            </li>
-            <li className="nav-item">
+             </li>
+            {/*<li className="nav-item">
               <a className="nav-link" href="#">
                 {link}
               </a>
-            </li>
+            </li> */}
             {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -63,7 +63,7 @@ function Navbar({ navbar, home, link, dropDown, disabled, Search,Mode,Switch,Val
                 </li>
               </ul>
             </li> */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 className="nav-link "
                 href="#"
@@ -72,7 +72,7 @@ function Navbar({ navbar, home, link, dropDown, disabled, Search,Mode,Switch,Val
               >
                 {disabled}
               </a>
-            </li>
+            </li> */}
           </ul>
           <div className="me-5 d-flex justify-content-between mb-1" style={{height:"20px",width:"130px"}}>
           <div className="form-check form-check-inline">
