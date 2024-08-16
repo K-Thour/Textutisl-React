@@ -48,3 +48,6 @@
 #inlineRadio4{
   background: rgb(1, 38, 1);
 }
+#exampleFormControlTextarea1{
+  resize: none;
+}
