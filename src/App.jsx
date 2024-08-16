@@ -89,26 +89,8 @@ function App() {
       ),
     },
   ]);
-  return (
-    <>
-    
+  return (    
     <RouterProvider router={Router} />
-    
-      {/* <Navbar
-        navbar="TextUtilis"
-        home="home"
-        disabled="About"
-        Mode={mode}
-        Switch={toggle}
-        Validity={validity}
-        color={color}
-        selectColor={selectColor}
-        Button={Button}
-      />
-      <Alert alert={alert} /> */}
-      {/* <Textform Heading="Enter you text here" Mode={mode} showAlert={showAlert} color={color} /> */}
-      {/* <About Mode={mode} colour={color}/> */}
-      </>
   );
 }
 export default App;
