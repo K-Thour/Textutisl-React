@@ -1,11 +1,11 @@
 import React from "react";
 import Textform from "./Components/Textform.jsx";
 import Navbar from "./Components/Navbar.jsx";
-import About from "./Components/About.jsx";
+// import About from "./Components/About.jsx";
 import "./App.css";
 import { useState } from "react";
 import Alert from "./Components/Alert.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
   const [Button, setButton] = useState("");
@@ -43,11 +43,35 @@ function App() {
       setButton("true");
     }
   };
-  const Router = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-        <>
+  // const Router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: (
+        
+  //     ),
+  //   },
+  //   {
+  //     path: "/about",
+  //     element: (
+  //       <>
+  //         <Navbar
+  //           navbar="TextUtilis"
+  //           home="home"
+  //           disabled="About"
+  //           Mode={mode}
+  //           Switch={toggle}
+  //           Validity={validity}
+  //           color={color}
+  //           selectColor={selectColor}
+  //           Button={Button}
+  //         />
+  //         <Alert alert={alert} /> <About Mode={mode} colour={color} />
+  //       </>
+  //     ),
+  //   },
+  // ]);
+  return (    
+    <>
           <Navbar
             navbar="TextUtilis"
             home="home"
@@ -67,30 +91,6 @@ function App() {
             color={color}
           />
         </>
-      ),
-    },
-    {
-      path: "/about",
-      element: (
-        <>
-          <Navbar
-            navbar="TextUtilis"
-            home="home"
-            disabled="About"
-            Mode={mode}
-            Switch={toggle}
-            Validity={validity}
-            color={color}
-            selectColor={selectColor}
-            Button={Button}
-          />
-          <Alert alert={alert} /> <About Mode={mode} colour={color} />
-        </>
-      ),
-    },
-  ]);
-  return (    
-    <RouterProvider router={Router} />
   );
 }
 export default App;

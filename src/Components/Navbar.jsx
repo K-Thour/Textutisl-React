@@ -1,5 +1,5 @@
 import propTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { Router } from "@reach/router";
 function Navbar({ navbar, home, link, dropDown, disabled, Search,Mode,Switch,Validity,selectColor,Button}) {
   return (
@@ -22,9 +22,9 @@ function Navbar({ navbar, home, link, dropDown, disabled, Search,Mode,Switch,Val
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 font-weight-bold">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <a className="nav-link active" aria-current="page" href="#">
                 {home}
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
@@ -64,14 +64,14 @@ function Navbar({ navbar, home, link, dropDown, disabled, Search,Mode,Switch,Val
               </ul>
             </li> */}
             <li className="nav-item">
-              <Link
+              <a
                 className="nav-link "
-                to="/about"
+                href="#"
                 tabIndex="-1"
                 aria-disabled="true"
               >
                 {disabled}
-              </Link>
+              </a>
             </li>
           </ul>
           <div className="me-5 d-flex justify-content-between mb-1" style={{height:"20px",width:"130px"}}>
